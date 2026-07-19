@@ -1,0 +1,5 @@
+README.md | プロジェクト概要 | all | 01 概要
+AGENTS.md | エージェント運用ルール | dev | 02 開発
+goals/LOCAL_AGENT_CONTRACT.md | ローカルエージェント契約 | dev | 02 開発
+operations/SESSION_HANDOFF.md | セッション引き継ぎ | dev | 03 運用
+openspec/README.md | OpenSpec運用 | dev | 02 開発
