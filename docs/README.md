@@ -4,6 +4,7 @@
 
 - 開発目的の正本: `DEVELOPMENT_BRIEF.md`（確定版）
 - 段階構成の全体設計: `STAGE_DESIGN.md`
+- UI/UX 設計（北極星ワイヤーフレーム）: `UX_DESIGN.md`
 - Codex 開発依頼書: `CODEX_REQUEST.md`
 - 製品概要: `../README.md`
 - ローカルAgent契約: `../goals/LOCAL_AGENT_CONTRACT.md`
