@@ -1,6 +1,6 @@
 # セッション引き継ぎ
 
-最終更新: 2026-07-19
+最終更新: 2026-07-20
 
 ## 現在の状態
 
@@ -15,6 +15,7 @@
 - `docs/STAGE_DESIGN.md` 新規作成（5 Stage 設計、openspec capability 6 分割案、旧repo参照パターン）。
 - `docs/CODEX_REQUEST.md` 新規作成（Stage 別タスク・完了条件・レビュー観点、Tool 権限表、費用上限、人間承認ポイント、最初の依頼文）。
 - OpenSpec change `add-stage1-agent-core` を作成（proposal / design / tasks / spec delta 3 capability）。
+- **2026-07-20 追記**: 旧repoの `REBUILD_KNOWLEDGE_TRANSFER.md` を全文再読し、現行モデル（2026-07）前提で設計をレビュー・更新。①prompt 原則を「サイズ上限」から「ルール累積禁止＋安定 prefix（caching）」へ言い換え ②検証を runtime evidence / vision self-check（Haiku 4.5）/ 人間承認の 3 層に明文化 ③モデル既定値を仮決め（Sonnet 4.6、概算 $0.7–0.9/run で $1 上限と整合。着手時に単価再確認）④現行 API 前提（adaptive thinking・structured outputs・streaming・refusal 処理）を design.md と依頼書のレビュー観点に追加 ⑤Stage 5 の分離候補は「独立 Reviewer が先」を明記。
 
 ## 検証
 

@@ -20,7 +20,8 @@ DRAFT → PLANNING → WAITING_PLAN_APPROVAL → GENERATING → PREVIEW_READY
 
 - Anthropic SDK（TypeScript）を直接使う。Claude Agent SDK は使わない（学習目的のため loop・停止条件・State を自分の設計で持つ）。
 - 1 step = 1 回の assistant 応答。step ごとに Run の messages スナップショットと step 数を SQLite に保存。
-- system prompt は 5–10KB を上限の目安とし、企画入力・計画・Tool 説明のみを含める。
+- system prompt はゴール・制約・Tool 説明のみの安定した内容とし、ルールの累積追加をしない（旧repoの 60KB 肥大の教訓。サイズより「累積で操縦しない」ことが本質）。安定 prefix を保ち prompt caching を効かせる（可変値を先頭側に入れない、Tool 順序固定）。
+- 現行 API の前提: モデル既定は `claude-sonnet-4-6`。thinking は adaptive（`budget_tokens`・`temperature` は送らない）、深さは `output_config.effort`。PLANNING の構造化計画は structured outputs（`output_config.format`）で schema 保証。長い生成は streaming で受け、`stop_reason`（`end_turn` / `tool_use` / `max_tokens` / `refusal`）を分岐処理する。usage（cache_read / cache_creation 含む）を CostLedger に記録。
 
 ## 停止条件（Stage 1 実装分）
 
