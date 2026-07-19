@@ -2,31 +2,23 @@
 
 ## 目的
 
-AI Agentによるゲームの企画、生成、評価、修復、公開を再現可能な開発パイプラインとして扱うための新規プロジェクト候補です。
-
-既存の `C:\Users\shin0\aiagent\99_others\agentic-game-factory` と責務が重なるため、このリポジトリを後継、再設計、公開用のどれとして使うかを決めるまでは既存コードを移植しません。
+UI から AI Agent を操作し、ゲームの企画・コード・アセット・テストを段階的に生成するツール（v4 Project 4 の正本 repo）。目的の正本は [docs/DEVELOPMENT_BRIEF.md](docs/DEVELOPMENT_BRIEF.md)。
 
 ## 現在の状態
 
-- GitHub remote 接続済み。
-- Agent制御スケルトンとOpenSpecを導入済み。
-- 実行用コードは未作成。
-- 既存 `agentic-game-factory` との統合方針は要確認。
+- **正本確定（2026-07-19）**: この repo が P4 の正本。既存 `agentic-game-factory`（GitHub `shin21118/agentic-game-factory`）は読み取り専用の参照アーカイブ。コード移植はしない。
+- 開発brief 確定、段階設計（[docs/STAGE_DESIGN.md](docs/STAGE_DESIGN.md)）、Codex 依頼書（[docs/CODEX_REQUEST.md](docs/CODEX_REQUEST.md)）作成済み。
+- Stage 1 の OpenSpec change `add-stage1-agent-core` を提案済み（人間承認待ち）。
+- 実行用コードは未作成。実装開始は change 承認後（着手予定 11/23）。
 
-## 最初のマイルストーン
+## 確定済みスタック
 
-- 新旧リポジトリの役割と正本を決定する。
-- 最小の生成対象、評価ゲート、失敗時の修復フローを定義する。
-- 最初のend-to-endフローをOpenSpec changeとして合意する。
-
-## 実行方法
-
-未決定です。既存リポジトリのスタックを自動的にコピーしません。
+TypeScript 一体型: Next.js（UI）＋ Node worker（非同期Job、Stage 3〜）＋ SQLite（Stage 3 で PostgreSQL 再判断）。Agent loop は Anthropic SDK による自作。
 
 ## 検証方法
 
 ```powershell
-openspec validate --all --strict --no-interactive
+npx --yes @fission-ai/openspec@latest validate --all --strict --no-interactive
 ```
 
 実装開始後は、生成物の再現性、評価ゲート、失敗分類を自動検証へ追加します。

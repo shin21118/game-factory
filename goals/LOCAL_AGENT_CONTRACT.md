@@ -11,12 +11,12 @@
 
 ## 現在のマイルストーン
 
-既存 `agentic-game-factory` との責務境界を決め、最初のend-to-endフローと評価ゲートをOpenSpec changeとしてレビュー可能にする。
+正本は確定済み（2026-07-19: この repo が正本）。Stage 1 の OpenSpec change `add-stage1-agent-core` の承認を得て、Stage 1（単一 Agent＋複数 Tool）を実装する。
 
 ## ローカルコマンド
 
-- OpenSpec検証: `openspec validate --all --strict --no-interactive`
-- install / dev / test / build: 未決定。
+- OpenSpec検証: `npx --yes @fission-ai/openspec@latest validate --all --strict --no-interactive`
+- install / dev / test / build: Stage 1 scaffold で確定（Next.js + TypeScript + SQLite）。
 
 ## 編集可能範囲
 
