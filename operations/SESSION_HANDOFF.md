@@ -4,7 +4,7 @@
 
 ## 現在の状態
 
-`game-factory` は **P4 の正本として確定**（2026-07-19、`goal_roadmap/logs/decisions.md` に記録）。Codex へ開発依頼できる文書一式が揃い、Stage 1 の OpenSpec change が人間承認待ち。実行用コードは未作成（着手予定 11/23）。
+`game-factory` は **P4 の正本として確定**（2026-07-19、`goal_roadmap/logs/decisions.md` に記録）し、**Codex へ開発依頼できる準備が完了**した状態。文書一式（BRIEF 確定版・段階設計・UX 北極星設計・Codex 依頼書）と Stage 1 の OpenSpec change（人間承認待ち）が揃い、現行モデル（2026-07）前提のレビューも反映済み。モデル既定値は Sonnet 4.6 で仮決め。実行用コードは未作成（着手予定 11/23）。
 
 ## このセッションで変更したこと
 
@@ -30,15 +30,17 @@
 
 ## 次セッションの最初の行動
 
-`add-stage1-agent-core` の人間レビュー（承認 or 修正指示）。承認後、`docs/CODEX_REQUEST.md` §2 の依頼文で Codex に実装計画を提示させる。
+`openspec/changes/add-stage1-agent-core/` の人間レビュー（承認 or 修正指示）。承認後、`docs/CODEX_REQUEST.md` §2 の依頼文で Codex に実装計画を提示させる（コードはまだ書かせない）。着手（11/23）前に BRIEF「調査後に決める」の調査タスク（Sandbox 方式・Queue 実装・モデル単価の再確認）を消化する。
 
 ## 最初に確認するファイル
 
 - `docs/CODEX_REQUEST.md`
 - `docs/STAGE_DESIGN.md`
+- `docs/UX_DESIGN.md`
 - `openspec/changes/add-stage1-agent-core/`
 - `C:\Users\小澤慎平\aiagent\03_private\goal_roadmap\PROGRAM.md`（Block 20–24）
 
 ## 中央ロードマップ同期候補
 
-- 正本確定は 2026-07-19 に decisions.md / PROGRAM.md へ反映済み（goal_roadmap 側は未コミット。次回 goal_roadmap 作業時に commit する）。
+- 正本確定（2026-07-19）は decisions.md / PROGRAM.md へ反映・コミット済み（goal_roadmap `253157b`）。
+- 追加候補（次回 goal_roadmap 作業時）: P4 の準備状況を「Codex 依頼可能・Stage 1 change 承認待ち」として PROGRAM.md の repo 対応表の状態列 or 判断ログ周辺に一言反映するか検討。モデル仮決め（Sonnet 4.6）と UX 設計完了は repo 内事項なので中央反映は不要。
