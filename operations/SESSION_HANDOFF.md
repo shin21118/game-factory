@@ -12,6 +12,7 @@
 - OpenSpecをCodex向けに初期化。
 - SuperpowersとOpenSpecの役割分担をローカルルールへ追加。
 - bootstrap一式を初回commitとしてGitHubの `main` へpush。
+- 中央 `goal_roadmap` のv4再編に合わせ、計画参照を唯一の正本 `PROGRAM.md` へ移行。
 
 ## 検証
 
@@ -37,9 +38,11 @@ Superpowersの `brainstorming` で新旧repoの責務を比較し、合意内容
 - `AGENTS.md`
 - `goals/LOCAL_AGENT_CONTRACT.md`
 - `openspec/README.md`
+- `C:\Users\shin0\aiagent\02_management\goal_roadmap\PROGRAM.md`
+- `C:\Users\shin0\aiagent\02_management\goal_roadmap\logs\decisions.md`
 - `C:\Users\shin0\aiagent\99_others\agentic-game-factory` の正本文書（比較時のみ）
 
 ## 中央ロードマップ同期候補
 
 - bootstrap、GitHub接続、OpenSpec導入状態は2026-07-19に中央へ同期済み。
-- 新旧repoの正本関係と最初の実装フローが決まった時点で `project-registry.md` と判断ログを更新する。
+- 新旧repoの正本関係と最初の実装フローが決まった時点で `PROGRAM.md` と判断ログを更新する。

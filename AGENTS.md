@@ -7,9 +7,9 @@
 3. `README.md` を読む。
 4. `goals/LOCAL_AGENT_CONTRACT.md` と `operations/SESSION_HANDOFF.md` を読む。
 5. 中央ロードマップを確認する。
-   - `C:\Users\shin0\aiagent\02_management\goal_roadmap\CURRENT.md`
-   - `C:\Users\shin0\aiagent\02_management\goal_roadmap\operations\projects\project-registry.md`
-   - `C:\Users\shin0\aiagent\02_management\goal_roadmap\operations\agent\agent-driven-development.md`
+   - `C:\Users\shin0\aiagent\02_management\goal_roadmap\README.md`
+   - `C:\Users\shin0\aiagent\02_management\goal_roadmap\PROGRAM.md`
+   - `C:\Users\shin0\aiagent\02_management\goal_roadmap\logs\decisions.md`
 
 ## セッション運用
 

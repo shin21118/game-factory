@@ -2,8 +2,8 @@
 
 このリポジトリは中央のAgent駆動開発ルールに従います。
 
-- `C:\Users\shin0\aiagent\02_management\goal_roadmap\operations\agent\agent-driven-development.md`
-- `C:\Users\shin0\aiagent\02_management\goal_roadmap\operations\projects\project-registry.md`
+- `C:\Users\shin0\aiagent\01_application\AGENTS.md`
+- `C:\Users\shin0\aiagent\02_management\goal_roadmap\PROGRAM.md`
 
 ## ローカル目的
 
